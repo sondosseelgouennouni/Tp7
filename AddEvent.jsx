@@ -7,7 +7,15 @@ export default function AddEvent({ onAdd, onUpdate, onClose, editEv}) {
   const [description, setDescription] = useState("");
   const [type, setType] = useState("atelier");
 
- 
+  useEffect(() => {
+    if (editEvent) {
+      setTitle(editEvent.title || "");
+      setDate(editEvent.date || "");
+      setLieu(editEvent.lieu || "");
+      setDescription(editEvent.description || "");
+      setType(editEvent.type || "atelier");
+    }
+  }, [editEvent]);
   const handleSubmit = (e) => { e.preventDefault();
     const snd = {title,date,lieu,description,type,};
 
@@ -41,3 +49,4 @@ export default function AddEvent({ onAdd, onUpdate, onClose, editEv}) {
     </form>
   );
 }
+
