@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-"homepage": "https://sondosseelgouennouni.github.io/Tp7",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
@@ -13,7 +12,6 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -21,6 +19,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "homepage": "https://sondosseelgouennouni.github.io/TPPP7",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -39,8 +38,6 @@
       "last 1 safari version"
     ]
   },
-"homepage": "https://<Username>.github.io/<Repository-name>",
-
   "devDependencies": {
     "gh-pages": "^6.3.0"
   }
